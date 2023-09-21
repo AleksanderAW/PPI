@@ -19,7 +19,7 @@ if(isset($_SESSION['zalogowany'])&&($_SESSION['zalogowany']==false)){
 	<meta charset="UTF-8">
 	<title>Gierki | Kreator gierek</title>
 	<meta name="keywards" content="Piłka nożna">
-	<meta name="discryption" content="nauka programowania dla nieinformatycznyvh ludzi!" />
+	<meta name="discryption" content="projekt" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="author" content="Aleksander Wróblewski" />
 	<link rel="stylesheet" href="w_style/style.css" type="text/css" />
@@ -48,7 +48,7 @@ if(isset($_SESSION['zalogowany'])&&($_SESSION['zalogowany']==false)){
 				
 			<li><a href="aktualne_g.php">Aktualne gierki</a></li>
 				
-				<!--<li><a href="Konto.php">Konto</a></li>-->
+				<li><a href="Konto.php">Konto</a></li>
 				
 				<li><a href="wylog.php">Wyloguj się</a></li>
 				

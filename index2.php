@@ -72,8 +72,47 @@ if(isset($_SESSION['zalogowany'])&&($_SESSION['zalogowany']==false)){
 echo"<p><b> Witaj </b>".$_SESSION['login']." </p>";
 echo"<p><b> Id użytkownika: </b>".$_SESSION['id']." </p>";
 echo"<p><b>Imie: </b>".$_SESSION['name']." </p>";
-echo"<p><b>Nazwisko: </b>".$_SESSION['s_name']." </p>";
+echo"<p><b>Nazwisko: </b>".$_SESSION['s_name']." </p><br>";
 
+if(isset($_SESSION['z_na_mecz'])){
+	
+	echo"<p><b>Jesteś zapisany na mecz o numerze id: </b>".$_SESSION['z_na_mecz']." </p>";
+	
+	$id_m=$_SESSION['z_na_mecz'];
+	
+	require_once"connect.php";
+
+    $polaczenie=@new mysqli($host,$db_user,$db_password,$db_name);
+	
+	$sql6="SELECT * FROM mecz WHERE id_m='$id_m'";
+	
+	if($rezultat=@$polaczenie->query($sql6)){
+	
+    $ile_rekordow=$rezultat->num_rows;
+	
+	if($ile_rekordow>0){
+			
+		$wiersz=$rezultat->fetch_assoc();
+		
+		$_SESSION['na']=$wiersz['boisko'];
+		$_SESSION['ad']=$wiersz['adres'];
+		$_SESSION['cz']=$wiersz['czas'];
+		$_SESSION['da']=$wiersz['data_m'];
+		
+		$rezultat->free_result();
+	}
+	
+	}
+
+//echo $ile_rekordow;
+echo "Nazwa boiska: ".$_SESSION['na']."<br><br>";
+echo "Adres: ".$_SESSION['ad']."<br><br>";
+echo "Dnia: ".$_SESSION['da']."<br><br>";
+echo "W godzinach: ".$_SESSION['cz']."<br><br>";
+
+
+
+}
 
 ?>
 

@@ -1,7 +1,13 @@
 <?php
 
 session_start();
-
+/*
+if(isset($_SESSION['zalogowany'])&&($_SESSION['zalogowany']==true)){
+	
+	header('Location: aktualne_g.php');
+	exit();
+}
+*/
 require_once"connect.php";
 
 $polaczenie=@new mysqli($host,$db_user,$db_password,$db_name);
@@ -60,32 +66,7 @@ if($polaczenie->connect_errno!=0){
 					echo "Poziom:  ".$tab[$i]['poziom']."<br><br>";
 				    echo "Ilość wolnych miejsc:  ".$tab[$i]['wolne_m']."<br><br><br>";
 					
-	
-					
-					$id_m=$tab[$i]['id_m'];
-					
-					$adres=$tab[$i]['adres'];
-					
-					$wolne_m=$tab[$i]['wolne_m'];
-					
-						echo'
-						<form action="dolacz.php" method="post">
-
-						  
-                          <input type="hidden" value="' . $id_m. '" name="id_m" />
-						  
-                          <input type="hidden" value="' . $adres. '" name="adres" />
-						  
-                          <input type="hidden" value="' . $i. '" name="i" />
-						  
-                         <input type="hidden" value="' . $wolne_m. '" name="wolne_m" />
-						  
-					
-						<input type="submit" value="Zapisz się" class="enjoy">
-
-					</form>
-					';
-					
+					echo'<br><span style="color:yellow;font-size:20px;">Musisz się zalogować aby wziąść udział</span><br>';
 								
 				  
 	
@@ -137,14 +118,7 @@ if($polaczenie->connect_errno!=0){
 			</div>
 			<ol>
 				<li><a href="index.php">Strona glówna</a></li>
-				
-				
-				
-				<li><a href="kreator_g.php">Stworz gierkę</a></li>
-			
-                <li><a href="Konto.php">Konto</a></li>
-           
-				 
+					 
 				<li><a href="log.php">Zaloguj się</a>
 					<ul>
 						<li><a href="reg.php">Załóż konto</a></li>

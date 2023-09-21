@@ -42,7 +42,7 @@ if(isset($_SESSION['zalogowany'])&&($_SESSION['zalogowany']==true)){
 			</div>
 						
 			<ol>
-			<li><a href="aktualne_g.php">Aktualne gierki</a></li>
+			<li><a href="aktualne_g2.php">Aktualne gierki</a></li>
 				 
 				<li><a href="log.php">Zaloguj się</a>
 					<ul>

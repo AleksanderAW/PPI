@@ -48,7 +48,7 @@ if(isset($_SESSION['zalogowany'])&&($_SESSION['zalogowany']==false)){
 				
 			<li><a href="aktualne_g.php">Aktualne gierki</a></li>
 				
-				<!--<li><a href="Konto.php">Konto</a></li>-->
+				<li><a href="Konto.php">Konto</a></li>
 				
 				<li><a href="wylog.php">Wyloguj się</a></li>
 				
@@ -77,7 +77,7 @@ $rezultat=@$polaczenie->query($sql4);
 
 $ile_rekordow=$rezultat->num_rows;
 		 
-echo "Liczba boisk: ".$ile_rekordow."<br><br>";		 
+echo '<span style="color:blue;font-size:30px;">Liczba boisk: '.$ile_rekordow.'</span><br><br>';		 
 
 
 
