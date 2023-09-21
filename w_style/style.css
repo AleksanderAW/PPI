@@ -1,0 +1,388 @@
+body {
+	background-color: #222222;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	margin: 0 !important;
+}
+
+.container {
+	padding: 0px;
+	margin-bottom: 25px;
+	height: auto;
+}
+
+
+.logo {
+	font-size: 40px;
+	float: left;
+	width: 250px;
+	text-align: left;
+	margin-right: auto;
+	margin-left: 20px;
+}
+
+.nav {
+
+	height: 50px;
+	width: 100%;
+	padding: 10px 0;
+	background-color: black;
+	text-align: center;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+ol {
+	float: right;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: 20px;
+	height: 40px;
+	line-height: 200%;
+	display: inline-block;
+}
+
+ol a {
+	color: black;
+	text-decoration: none;
+	display: block;
+
+}
+
+ol > li {
+	float: left;
+	width: 150px;
+	height: 40px;
+	/*border-right: 2px solid black;*/
+
+}
+
+.container2 {
+	color: white;
+	display: inline-block;
+	float: left;
+	width: 100%;
+	position: relative;
+	height: auto;
+}
+
+.container3 {
+	color: white;
+	display: inline-block;
+	float: left;
+	width: 100%;
+	position: relative;
+	height: auto;
+}
+
+.content {
+	display: inline-block;
+	float: left;
+
+}
+
+h1 {
+	font-size: 32px;
+	font-weight: 400;
+	/*color: #39a5f1;*/
+	color: white;
+	margin-top: 45px;
+	margin-bottom: 30px;
+	letter-spacing: 10px;
+	margin-left: 20px;
+	text-transform: uppercase;
+}
+
+.postcard {
+	float: left;
+	display: inline-block;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	width: auto;
+	position: relative;
+
+}
+
+.postcard2 {
+	float: left;
+	display: inline-block;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	width: auto;
+	position: relative;
+
+}
+
+.picture {
+	font-size: 20px;
+	width: 400px;
+	position: relative;
+
+}
+
+.picture2 {
+	font-size: 20px;
+	width: 400px;
+	position: relative;
+
+}
+
+.photo {
+
+	/*color: #39a5f1;*/
+	color: white;
+	position: relative;
+
+}
+
+.enjoy {}
+
+.footer {
+	float: left;
+	text-align: center;
+	color: darkgreen;
+	background-color: black;
+	padding: 10px;
+	width: 100%;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black
+}
+
+/*-----------------------------------------------------------------------*/
+a:link {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #fff;
+}
+
+a:hover {
+	color: #fff;
+}
+
+a:active {
+	color: #fff;
+}
+
+.content {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+}
+
+.socials {
+	width: 100%;
+	text-align: center;
+	background-color: #292929;
+}
+
+.socialsdivs {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	height: auto;
+}
+
+.fb {
+	width: 250px;
+	height: 155px;
+	float: left;
+}
+
+.fb:hover {
+	background-color: #4668b3;
+}
+
+.ig {
+	width: 250px;
+	height: 155px;
+	float: left;
+}
+
+.ig:hover {
+	background-color: purple;
+}
+
+.yt {
+	width: 250px;
+	height: 155px;
+	float: left;
+}
+
+.yt:hover {
+	background-color: red;
+}
+
+.tw {
+	width: 250px;
+	height: 155px;
+	float: left;
+}
+
+.tw:hover {
+	background-color: #3095d3;
+}
+
+.msg {
+	width: 250px;
+	height: 155px;
+	float: left;
+}
+
+.msg:hover {
+	background-color: #3095d3;
+}
+
+.icon {
+	color: green;
+	font-size: 60px;
+	padding-top: 40px;
+	line-height: 2.5em;
+}
+
+.icon:hover {
+	color: black;
+}
+
+
+
+.sticky {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+
+/*
+ol > li:first-child {
+	border-left: 2px solid black;
+
+}
+*/
+
+ol > li:hover {
+	background-color: green;
+}
+
+ol > li:hover > a {
+	color: white;
+}
+
+ol > li > ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 40px;
+	display: none;
+}
+
+ol > li:hover > ul {
+	display: block;
+}
+
+ol > li > ul > li {
+	background-color: darkgreen;
+	position: relative;
+	z-index: 100;
+}
+
+ol > li > ul > li:hover {
+	background-color: green;
+
+}
+
+ol > li > ul > li:hover > a {
+	color: white;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+.container2_log {
+	display: block;
+	padding-left: auto;
+	padding-right: auto;
+	width: 350px;
+	height: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+	color: darkgreen;
+	text-align: center;
+}
+
+input[type=password],
+input[type=text],
+#f_data {
+	float: left;
+	width: 330px;
+	background-color: #efefef;
+	color: #666666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	outline: none;
+	margin: 10px;
+	display: block;
+}
+
+input[type=password]:focus,
+input[type=text]:focus,
+#f_data:focus {
+	-webkit-box-shadow: 0px 11px 16px 1px rgba(0, 0, 0, 0.42);
+	-moz-box-shadow: 0px 11px 16px 1px rgba(0, 0, 0, 0.42);
+	box-shadow: 0px 11px 16px 1px rgba(0, 0, 0, 0.42);
+	border: 2px solid #37b93d;
+}
+
+/*firefoc > 19*/
+/*pamietaj o wywaleniu notatki z inputow zeby dzialalo*/
+/*input:-moz-placeholder{
+color#999;
+}
+input:focus:-moz-placeholder{
+color:#37b93d;
+}
+*/
+/* moja próba input[placeholder=login]:focus,
+input[placeholder=haslo]:focus
+{
+    color: #37b93d;
+}*/
+input[type=submit]:focus {
+	-webkit-box-shadow: 0px 11px 0px 1px rgba(0, 0, 0, 0.42);
+	-moz-box-shadow: 0px 11px 16px 1px rgba(0, 0, 0, 0.42);
+	box-shadow: 0px 11px 16px 1px rgba(0, 0, 0, 0.42);
+}
+
+input[type=submit] {
+	float: left;
+	width: 330px;
+	/*background-color: #36b03c;*/
+	background-color: darkgreen;
+	font-size: 20px;
+	color: white;
+	padding: 15px 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	margin: 10px;
+	display: block;
+}
+
+input[type=submit]:hover {
+	background-color: #37b93d;
+	opacity: 0.8;
+}
+
