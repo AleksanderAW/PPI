@@ -145,10 +145,8 @@ if($polaczenie->connect_errno!=0){
                 <li><a href="Konto.php">Konto</a></li>
            
 				 
-				<li><a href="log.php">Zaloguj się</a>
-					<ul>
-						<li><a href="reg.php">Załóż konto</a></li>
-					</ul>
+				<li><a href="wylog.php">Wyloguj się</a>
+					
 				</li>
 			</ol>
 		</div>
